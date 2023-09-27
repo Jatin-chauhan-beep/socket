@@ -2,7 +2,7 @@ const { Server } = require("socket.io");
 const port = process.env.PORT || 9000;
 const io = new Server(port, {
   cors: {
-    origin: "https://whatsapp-21.web.app/",
+    origin: "*",
   },
 });
 
